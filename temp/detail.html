@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div style="text-align: center; font-family: sans-serif; color: steelblue;">
+        
+        <div>
+            <h1>{{ post.Title }}</h1>
+            <h2>{{ post.Author }}</h2>
+            <h3>{{ post.Body }}</h3>
+        </div>
+
+        <div>
+            <p style="text-align: center; font-family: sans-serif; color: steelblue;"><a href="{% url 'update' post.pk %}">Edit</a></p>
+            <p style="text-align: center; font-family: sans-serif; color: steelblue;"><a href="{% url 'delete' post.pk %}">Delete</a></p>
+        </div>
+
+    </div>
+        
+{% endblock content %}
