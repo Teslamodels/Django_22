@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Base</title>
+</head>
+<body>
+    <div style="text-align: center; font-family: sans-serif; color: steelblue;">
+        <header>
+            <h1 style="text-decoration: none;"><a href="{% url 'list' %}">Facebook</a></h1>
+            <h2 style="text-decoration: none;"><a href="{% url 'create' %}">Post</a></h2>    
+        </header>
+    </div>
+
+    <div>
+        {% block content %}
+        {% endblock content %}
+    </div>
+</body>
+</html>
